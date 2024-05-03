@@ -16,29 +16,29 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid padding-0">
-                <img src="./img/logo-caromas.jpg" alt="logo-caromas">
-                <button class="navbar-toggler menu-boton" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid cont-menu">
+                <img class="img-menu" src="./img/logo-caromas.jpg" alt="logo-caromas">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon menu-icono"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-ul">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                <div class="collapse navbar-collapse menu" id="navbarNav">
+                    <ul class="navbar-nav menu-ul">
+                        <li class="nav-item menu-item">
+                            <a class="nav-link menu-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu-item">
                             <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu-item">
                             <a class="nav-link" href="./pages/productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu-item">
                             <a class="nav-link" href="./pages/packaging.html">Packaging</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu-item">
                             <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -47,8 +47,9 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="inicio-carrusel">
             <div id="carouselExampleIndicators" class="carousel slide">
+                <h1 class="sobre-img">Fragancias con tu estilo</h1>
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -56,13 +57,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/auto-copa.png" class="d-block w-100" alt="auto-copa">
+                        <img src="./img/auto-copa-opacidad.png" class="d-block w-100" alt="auto-copa">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/auto-flor.png" class="d-block w-100" alt="auto-flor">
+                        <img src="./img/auto-flor-opacidad.png" class="d-block w-100" alt="auto-flor">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/auto-pet.png" class="d-block w-100" alt="auto-pet">
+                        <img src="./img/auto-pet-opacidad.png" class="d-block w-100" alt="auto-pet">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -75,8 +76,22 @@
                 </button>
             </div>
         </section>
+        <section class="seccion-2">
+            <div class="seccion-contenido">
+                <div>
+                    <img class="img-inicio" src="./img/img-inicio.png" alt="img-inicio">
+                </div>
+                <div class="inicio-presentacion">
+                    <h2>Aromatizante para autos</h2>
+                    <h3>Explorá nuestra amplia selección de aromatizantes para autos, con diseños únicos y atractivos que harán de tu viaje una experiencia única.</h3>
+                    <h3>Producto de alta calidad realizado en Argentina.</h3>
+                    <h3 class="separacion-boton">¡Lleva con vos la frescura y el estilo que mereces!</h3>
+                    <a class="link-productos" href="./pages/productos.html">Ver productos</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
+    <footer>
         <div>
             <a href="https://www.facebook.com/" target="_blank"><img src="./img/icono-fb.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="./img/icono-ig.png"
@@ -84,7 +99,7 @@
             <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><img src="./img/icono-mail.png"
                     alt="Mail"></a>
         </div>
-        <h2>© 2024 Caromas Fragancias</h2>
+        <h4 class="copyright">© 2024 <span>Caromas Fragancias</span>, todos los derechos reservados.</h4>
     </footer>
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
