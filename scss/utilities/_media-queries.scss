@@ -41,6 +41,10 @@
                 .inicio-presentacion{
                     div{
                         margin-bottom: 15px;
+                        margin-top: 20px;
+                        a{
+                            position: static;
+                        }
                     }
                 }
             }
@@ -62,7 +66,7 @@
     /* main packaging */
     .main-packaging{
         .container{
-            margin-bottom: 10px;
+            margin-bottom: 18px;
         }
     }
     /* main contacto */
@@ -83,27 +87,12 @@
                             height: 25px;
                         }
                         h3{
-                            font-size: 1.4rem;
+                            font-size: 1.2rem;
                         }
                     }
                 }
                 .formulario{
                     width: 100%;
-                    form{
-                        div{
-                            input{
-                                width: 390px;
-                            }
-                        }
-                        div{
-                            textarea{
-                                width: 390px;
-                            }
-                        }
-                        .boton-enviar{
-                            width: 390px;
-                        }
-                    }
                 }
             }
         }
@@ -187,6 +176,9 @@
                             width: 50%;
                         }
                     }
+                    .sizecard-font{
+                        width: 36vw;
+                    }
                 }
             }
         }
@@ -209,26 +201,6 @@
                         }
                     }
                 }
-                .formulario{
-                    form{
-                        div{
-                            input{
-                                font-size: 1.1rem;
-                                width: 290px;
-                            }
-                        }
-                        div{
-                            textarea{
-                                font-size: 1.1rem;
-                                width: 290px;
-                            }
-                        }
-                        .boton-enviar{
-                            font-size: 1.1rem;
-                            width: 290px;
-                        }
-                    }
-                }
             }
         }
     }
@@ -236,6 +208,93 @@
     footer{
         .copyright{
             font-size: 0.9rem;
+        }
+    }
+}
+
+/* MEDIA QUERY EN MOBILE */
+@media screen and (max-width: 550px){
+    /* Main index */
+    .main-index{
+        .inicio-carrusel{
+            div{
+                .sobre-img{
+                    font-size: 2.2rem;
+                }
+            }
+        }
+        .seccion-2{
+            .seccion-contenido{
+                div{
+                    .img-inicio{
+                        width: 80vw;
+                    }
+                }
+                .inicio-presentacion{
+                    width: 70vw;
+                }
+            }
+        }
+    }
+    /* Main nosotros */
+    .main-nosotros{
+        .sobre-nosotros{
+            div{
+                .img-nosotros{
+                    width: 80vw;
+                }
+            }
+            .texto-presentacion{
+                width: 80vw;
+            }
+        }
+    }
+    /* Main productos */
+    .main-productos{
+        section{
+            .grilla-productos{
+                .card{
+                    width: 49vw;
+                }
+            }
+        }
+        .productos-desarrollo{
+            h2{
+                font-size: 1.8rem;
+            }
+            .slider-productos{
+                .tamaño-slider{
+                    width: 39vw;
+                }
+            }
+        }
+    }
+    /* Main productos */
+    .main-packaging{
+        .container{
+            .contenedor-packaging{
+                .row{
+                    .contenedor-img{
+                    }
+                    .sizecard-font{
+                        width: 50vw;
+                    }
+                }
+            }
+        }
+    }
+    /* Main contacto */
+    .main-contacto{
+        .contactanos{
+            .form-contacto{
+                .datos-contacto{
+                    justify-content: center;
+                    .alinear-elementos{
+                        flex-direction: column;
+                        width: 213px;
+                    }
+                }
+            }
         }
     }
 }

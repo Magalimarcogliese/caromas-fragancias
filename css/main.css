@@ -303,6 +303,8 @@ header nav .cont-menu .menu .menu-ul li .active {
   box-shadow: 0px 0px 7px 0px #222;
   border-radius: 10px;
   width: 100%;
+  margin: auto;
+  display: block;
 }
 .main-packaging .container .contenedor-packaging .row .sizecard-font {
   width: 240px;
@@ -345,13 +347,13 @@ header nav .cont-menu .menu .menu-ul li .active {
   border-radius: 10px;
 }
 .main-contacto .contactanos .form-contacto {
-  width: 545px;
+  width: 40vw;
 }
 .main-contacto .contactanos .form-contacto .datos-contacto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 545px;
+  width: 80%;
 }
 .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos {
   padding: 10px;
@@ -381,7 +383,7 @@ header nav .cont-menu .menu .menu-ul li .active {
   font-weight: 300;
   margin-top: 15px;
   padding: 9px;
-  width: 530px;
+  width: 80%;
   border: none;
   border: 1px solid #8fc8eb;
   border-radius: 10px;
@@ -391,7 +393,7 @@ header nav .cont-menu .menu .menu-ul li .active {
   font-weight: 300;
   margin-top: 15px;
   padding: 9px;
-  width: 530px;
+  width: 80%;
   border: none;
   border: 1px solid #8fc8eb;
   border-radius: 10px;
@@ -400,7 +402,7 @@ header nav .cont-menu .menu .menu-ul li .active {
   font-size: 1.2rem;
   font-weight: 300;
   padding: 9px;
-  width: 530px;
+  width: 80%;
   border: none;
   border: 1px solid #8fc8eb;
   border-radius: 10px;
@@ -459,6 +461,10 @@ footer .copyright span {
   }
   .main-index .seccion-2 .seccion-contenido .inicio-presentacion div {
     margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion div a {
+    position: static;
   }
   /* main productos */
   .main-productos section .grilla-productos {
@@ -471,7 +477,7 @@ footer .copyright span {
   }
   /* main packaging */
   .main-packaging .container {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
   }
   /* main contacto */
   .main-contacto .contactanos .maps iframe {
@@ -488,19 +494,10 @@ footer .copyright span {
     height: 25px;
   }
   .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .main-contacto .contactanos .form-contacto .formulario {
     width: 100%;
-  }
-  .main-contacto .contactanos .form-contacto .formulario form div input {
-    width: 390px;
-  }
-  .main-contacto .contactanos .form-contacto .formulario form div textarea {
-    width: 390px;
-  }
-  .main-contacto .contactanos .form-contacto .formulario form .boton-enviar {
-    width: 390px;
   }
 }
 /* MEDIA QUERY DESDE TABLET A MOBILE */
@@ -552,6 +549,9 @@ footer .copyright span {
   .main-packaging .container .contenedor-packaging .row .contenedor-img img {
     width: 50%;
   }
+  .main-packaging .container .contenedor-packaging .row .sizecard-font {
+    width: 36vw;
+  }
   /* Main contacto */
   .main-contacto .contactanos {
     flex-direction: column;
@@ -563,21 +563,51 @@ footer .copyright span {
   .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos h3 {
     font-size: 1.2rem;
   }
-  .main-contacto .contactanos .form-contacto .formulario form div input {
-    font-size: 1.1rem;
-    width: 290px;
-  }
-  .main-contacto .contactanos .form-contacto .formulario form div textarea {
-    font-size: 1.1rem;
-    width: 290px;
-  }
-  .main-contacto .contactanos .form-contacto .formulario form .boton-enviar {
-    font-size: 1.1rem;
-    width: 290px;
-  }
   /* Footer */
   footer .copyright {
     font-size: 0.9rem;
+  }
+}
+/* MEDIA QUERY EN MOBILE */
+@media screen and (max-width: 550px) {
+  /* Main index */
+  .main-index .inicio-carrusel div .sobre-img {
+    font-size: 2.2rem;
+  }
+  .main-index .seccion-2 .seccion-contenido div .img-inicio {
+    width: 80vw;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion {
+    width: 70vw;
+  }
+  /* Main nosotros */
+  .main-nosotros .sobre-nosotros div .img-nosotros {
+    width: 80vw;
+  }
+  .main-nosotros .sobre-nosotros .texto-presentacion {
+    width: 80vw;
+  }
+  /* Main productos */
+  .main-productos section .grilla-productos .card {
+    width: 49vw;
+  }
+  .main-productos .productos-desarrollo h2 {
+    font-size: 1.8rem;
+  }
+  .main-productos .productos-desarrollo .slider-productos .tamaño-slider {
+    width: 39vw;
+  }
+  /* Main productos */
+  .main-packaging .container .contenedor-packaging .row .sizecard-font {
+    width: 50vw;
+  }
+  /* Main contacto */
+  .main-contacto .contactanos .form-contacto .datos-contacto {
+    justify-content: center;
+  }
+  .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos {
+    flex-direction: column;
+    width: 213px;
   }
 }
 
