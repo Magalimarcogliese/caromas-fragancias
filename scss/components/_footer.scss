@@ -1,0 +1,26 @@
+/* FOOTER */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    div{
+        padding: 30px;
+        a{
+            img{
+                width: 60px;
+            }
+        }
+    }
+    .copyright{
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 10px;
+        span{
+            font-weight: 500;
+        }
+    }
+}

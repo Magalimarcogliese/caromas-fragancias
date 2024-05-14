@@ -1,0 +1,42 @@
+/* HEADER */
+header{
+    background-color: black;
+    nav{
+        .cont-menu{
+            padding: 0px;
+            .img-menu{
+                width: 200px;
+                padding: 10px;
+                margin-left: 60px;
+            }
+            button{
+                padding-right: 40px;
+                .navbar-toggler-icon{
+                    width: 2.5rem;
+                    background-image: url(./../img/menu-icono.svg);
+                }
+            }
+            .menu{
+                flex-grow: 0;
+                .menu-ul{
+                    text-align: center;
+                    li{
+                        a{
+                            color: white;
+                            font-size: 2rem;
+                            font-weight: 600;
+                            margin-right: 32px;
+                            width: 100%;
+                            &:hover{
+                                color: #8fc8eb;
+                            }
+                        }
+                        .active{
+                            color: #8fc8eb;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

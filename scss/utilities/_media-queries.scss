@@ -1,0 +1,241 @@
+/* MEDIA QUERY DESDE DESKTOP A TABLET */
+@media screen and (max-width: 1024px){
+    /* Header */
+    header{
+        nav{
+            .cont-menu{
+                .img-menu{
+                    width: 150px;
+                    margin-left: 30px;
+                }
+                .menu{
+                    .menu-ul{
+                        margin-right: 20px;
+                        li{
+                            a{
+                                font-size: 1.6rem;
+                                margin-right: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Main index */
+    .main-index{
+        .inicio-carrusel{
+            div{
+                .sobre-img{
+                    font-size: 3.3rem;
+                }
+            }
+        }
+        .seccion-2{
+            .seccion-contenido{
+                div{
+                    .img-inicio{
+                        width: 46vw;
+                    }
+                }
+                .inicio-presentacion{
+                    div{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    /* main productos */
+    .main-productos{
+        section{
+            .grilla-productos{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                row-gap: 38px;
+                .card{
+                    width: 65%;
+                }
+            }
+        }
+    }
+    /* main packaging */
+    .main-packaging{
+        .container{
+            margin-bottom: 10px;
+        }
+    }
+    /* main contacto */
+    .main-contacto{
+        .contactanos{
+            .maps{
+                iframe{
+                    width: 40vw;
+                    height: 77vh;
+                }
+            }
+            .form-contacto{
+                width: 40vw;
+                .datos-contacto{
+                    width: 100%;
+                    .alinear-elementos{
+                        img{
+                            height: 25px;
+                        }
+                        h3{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                .formulario{
+                    width: 100%;
+                    form{
+                        div{
+                            input{
+                                width: 390px;
+                            }
+                        }
+                        div{
+                            textarea{
+                                width: 390px;
+                            }
+                        }
+                        .boton-enviar{
+                            width: 390px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERY DESDE TABLET A MOBILE */
+@media screen and (max-width: 767px){
+    /* Header */
+    header{
+        nav{
+            .cont-menu{
+                .menu{
+                    width: 100vw;
+                    .menu-ul{
+                        li{
+                            width: 100vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Main index */
+    .main-index{
+        .seccion-2{
+            .seccion-contenido{
+                flex-direction: column;
+                align-items: center;
+                div{
+                    .img-inicio{
+                        width: 55vw;
+                    }
+                }
+                .inicio-presentacion{
+                    width: 55vw;
+                    h2{
+                        text-align: center;
+                    }
+                    .margin-bottom{
+                        margin-bottom: 25px;
+                    }
+                    div{
+                        a{
+                            position: static;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Main productos */
+    .main-productos{
+        section{
+            .grilla-productos{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                .card{
+                    width: 50%;
+                }
+            }
+        }
+        .productos-desarrollo{
+            .slider-productos{
+                .tamaño-slider{
+                    width: 39%;
+                    --swiffy-slider-item-count: 1;
+                }
+            }
+        }
+    }
+    /* Main packaging */
+    .main-packaging{
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            .contenedor-packaging{
+                .row{
+                    .contenedor-img{
+                        img{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Main contacto */
+    .main-contacto{
+        .contactanos{
+            flex-direction: column;
+            .maps{
+                iframe{
+                    width: 40vw;
+                    height: 40vh;
+                }
+            }
+            .form-contacto{
+                .datos-contacto{
+                    .alinear-elementos{
+                        h3{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                .formulario{
+                    form{
+                        div{
+                            input{
+                                font-size: 1.1rem;
+                                width: 290px;
+                            }
+                        }
+                        div{
+                            textarea{
+                                font-size: 1.1rem;
+                                width: 290px;
+                            }
+                        }
+                        .boton-enviar{
+                            font-size: 1.1rem;
+                            width: 290px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Footer */
+    footer{
+        .copyright{
+            font-size: 0.9rem;
+        }
+    }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caromas Fragancias</title>
+    <title>Caromas Fragancias | Productos</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./../img/icono-caromas.png">
     <!-- Link css Bootstrap -->
@@ -11,8 +11,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Link css Swiffyslider -->
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-    <!-- Link al css -->
-    <link rel="stylesheet" href="./../css/styles.css">
+    <!-- Link css SASS -->
+    <link rel="stylesheet" href="./../css/main.css">
     <!-- Fuentes -->
     <link rel="stylesheet" href="https://use.typekit.net/xyn1szl.css">
 </head>
@@ -48,11 +48,11 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-productos">
         <h1>Nuestros clásicos</h1>
         <section>
             <div class="grilla-productos">
-                <div class="card card-copa">
+                <div class="card">
                     <img src="./../img/copa-producto.jpg" class="card-img-top" alt="copa-producto">
                     <div class="card-body">
                         <h2 class="card-title">Modelo 2022</h2>
@@ -60,7 +60,7 @@
                         <a href="#" class="btn btn-primary boton-info">+info</a>
                     </div>
                 </div>
-                <div class="card card-spring">
+                <div class="card">
                     <img src="./../img/spring-producto.jpg" class="card-img-top" alt="spring-producto">
                     <div class="card-body">
                         <h2 class="card-title">Modelo Spring</h2>
@@ -68,7 +68,7 @@
                         <a href="#" class="btn btn-primary boton-info">+info</a>
                     </div>
                 </div>
-                <div class="card card-summer">
+                <div class="card">
                     <img src="./../img/summer-producto.jpg" class="card-img-top" alt="summer-producto">
                     <div class="card-body">
                         <h2 class="card-title">Modelo Summer</h2>
@@ -76,7 +76,7 @@
                         <a href="#" class="btn btn-primary boton-info">+info</a>
                     </div>
                 </div>
-                <div class="card card-pet">
+                <div class="card">
                     <img src="./../img/pet-producto.jpg" class="card-img-top" alt="pet-producto">
                     <div class="card-body">
                         <h2 class="card-title">Modelo Pet</h2>
@@ -98,10 +98,9 @@
                                 </div>
                                 <div class="card-body p-0 pt-2">
                                     <div class="d-flex">
-                                        <h3 class="flex-grow-1 h5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modelo insecto</font></font></h3>
-                                        <p class="px-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></p>
+                                        <h3 class="flex-grow-1 h5">Modelo insecto</h3>
                                     </div>
-                                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Butterfly</font></font></p>
+                                    <p class="card-text">Butterfly</p>
                                 </div>
                             </div>
                         </li>
@@ -112,10 +111,9 @@
                                 </div>
                                 <div class="card-body p-0 pt-2">
                                     <div class="d-flex">
-                                        <h3 class="flex-grow-1 h5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modelo animal</font></font></h3>
-                                        <p class="px-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></p>
+                                        <h3 class="flex-grow-1 h5">Modelo animal</h3>
                                     </div>
-                                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Golden</font></font></p>
+                                    <p class="card-text">Golden</p>
                                 </div>
                             </div>
                         </li>
@@ -126,10 +124,9 @@
                                 </div>
                                 <div class="card-body p-0 pt-2">
                                     <div class="d-flex">
-                                        <h3 class="flex-grow-1 h5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modelo animal</font></font></h3>
-                                        <p class="px-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></p>
+                                        <h3 class="flex-grow-1 h5">Modelo animal</h3>
                                     </div>
-                                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Black cat</font></font></p>
+                                    <p class="card-text">Black cat</p>
                                 </div>
                             </div>
                         </li>
@@ -140,10 +137,9 @@
                                 </div>
                                 <div class="card-body p-0 pt-2">
                                     <div class="d-flex">
-                                        <h3 class="flex-grow-1 h5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modelo sport</font></h3>
-                                        <p class="px-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></p>
+                                        <h3 class="flex-grow-1 h5">Modelo sport</h3>
                                     </div>
-                                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Basket</font></font></p>
+                                    <p class="card-text">Basket</p>
                                 </div>
                             </div>
                         </li>
@@ -154,10 +150,9 @@
                                 </div>
                                 <div class="card-body p-0 pt-2">
                                     <div class="d-flex">
-                                        <h3 class="flex-grow-1 h5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modelo sport</font></h3>
-                                        <p class="px-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></p>
+                                        <h3 class="flex-grow-1 h5">Modelo sport</h3>
                                     </div>
-                                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Golf</font></font></p>
+                                    <p class="card-text">Golf</p>
                                 </div>
                             </div>
                         </li>  
