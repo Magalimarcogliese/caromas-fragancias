@@ -1,15 +1,19 @@
+// Variables
 @import "./utilities/variables";
+// Estilos globales
 @import "./utilities/globals";
-@import "./utilities/loop";
+// Utilities
 @import "./utilities/extend";
 @import "./utilities/mixin";
+// Header
 @import "./components/header";
-
+// Main
 @import "./pages/main-index";
 @import "./pages/main-nosotros";
 @import "./pages/main-productos";
 @import "./pages/main-packaging";
 @import "./pages/main-contacto";
-
+// Footer
 @import "./components/footer";
+// Media queries
 @import "./utilities/media-queries";

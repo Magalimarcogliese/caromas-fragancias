@@ -6,7 +6,7 @@
             .sobre-img{
                 font-weight: 600;
                 font-size: 4rem;
-                color: white;
+                color: nth($list: $colores, $n: 2);
                 position: absolute;
                 width: 100%;
                 height: 34vh;
@@ -65,13 +65,13 @@
                         letter-spacing: 1px;
                         bottom: 20px;
                         transition: .6s;  
-                        color: white;
-                        background-color: black;
+                        color: nth($list: $colores, $n: 2);
+                        background-color: nth($list: $colores, $n: 1);
                         z-index: 2;
                         &:hover{
-                            background: #8fc8eb;
-                            border-color: #8fc8eb;
-                            color: black;
+                            background-color: nth($list: $colores, $n: 3);
+                            border-color: nth($list: $colores, $n: 3);
+                            color: nth($list: $colores, $n: 1);
                         }
                     }
                 }

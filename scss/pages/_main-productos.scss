@@ -2,9 +2,7 @@
 .main-productos{
     section{
         .grilla-productos{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 1fr;
+            @include grid(repeat(4, 1fr), 1fr);
             align-items: center;
             justify-content: center;
             margin: 2rem;
@@ -26,13 +24,13 @@
                         width: 100%;
                     }
                     .boton-info{
-                        background-color: rgb(29, 28, 28);
+                        background-color: nth($list: $colores, $n: 1);
                         border: none;
-                        --bs-btn-active-bg: #8fc8eb;
+                        --bs-btn-active-bg: nth($list: $colores, $n: 3);
                         &:hover{
-                            background-color: #8fc8eb;
-                            border-color: #8fc8eb;
-                            color: black;
+                            background-color: nth($list: $colores, $n: 3);
+                            border-color: nth($list: $colores, $n: 3);
+                            color: nth($list: $colores, $n: 1);
                         }
                     }
                 }
@@ -47,10 +45,8 @@
             padding-top: 35px;
         }
         .slider-productos{
+            @include flex (row,center,center);
             padding: 25px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin-bottom: 42px;
             .tamaño-slider{
                 width: 70%;

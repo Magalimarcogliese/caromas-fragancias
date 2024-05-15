@@ -54,8 +54,7 @@
     .main-productos{
         section{
             .grilla-productos{
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, 1fr);
+                @include grid(repeat(2, 1fr),repeat(2, 1fr));
                 row-gap: 38px;
                 .card{
                     width: 65%;
@@ -148,8 +147,7 @@
     .main-productos{
         section{
             .grilla-productos{
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(4, 1fr);
+                @include grid(1fr,repeat(4, 1fr));
                 .card{
                     width: 50%;
                 }
@@ -167,8 +165,7 @@
     /* Main packaging */
     .main-packaging{
         .container{
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
+            @include grid(1fr,repeat(4, 1fr));
             .contenedor-packaging{
                 .row{
                     .contenedor-img{
@@ -194,10 +191,25 @@
                 }
             }
             .form-contacto{
+                width: 40vw;
                 .datos-contacto{
+                    flex-direction: column;
                     .alinear-elementos{
                         h3{
                             font-size: 1.2rem;
+                        }
+                    }
+                }
+                .formulario{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    form{
+                        width: 53vw;
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
                         }
                     }
                 }
@@ -274,8 +286,6 @@
         .container{
             .contenedor-packaging{
                 .row{
-                    .contenedor-img{
-                    }
                     .sizecard-font{
                         width: 50vw;
                     }
@@ -286,12 +296,33 @@
     /* Main contacto */
     .main-contacto{
         .contactanos{
+            .maps{
+                iframe{
+                    width: 60vw;
+                }
+            }
             .form-contacto{
+                width: 90vw;
                 .datos-contacto{
-                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
                     .alinear-elementos{
                         flex-direction: column;
                         width: 213px;
+                    }
+                }
+                .formulario{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    form{
+                        width: 80vw;
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
                     }
                 }
             }
