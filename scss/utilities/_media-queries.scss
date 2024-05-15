@@ -80,7 +80,6 @@
             .form-contacto{
                 width: 40vw;
                 .datos-contacto{
-                    width: 100%;
                     .alinear-elementos{
                         img{
                             height: 25px;
@@ -164,6 +163,12 @@
     }
     /* Main packaging */
     .main-packaging{
+        h3{
+            width: 61vw;
+            margin: auto;
+            margin-top: 18px;
+            font-size: 1.4rem;
+        }
         .container{
             @include grid(1fr,repeat(4, 1fr));
             .contenedor-packaging{
@@ -304,6 +309,7 @@
             .form-contacto{
                 width: 90vw;
                 .datos-contacto{
+                    width: 90vw;
                     flex-direction: column;
                     align-items: center;
                     text-align: center;

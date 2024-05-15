@@ -33,6 +33,18 @@ button {
   margin: 5px;
 }
 
+.main-packaging .container .contenedor-packaging .row .sizecard-font .card-solopackaging .boton-info, .main-productos section .grilla-productos .card .card-body .boton-info, .main-nosotros .sobre-nosotros .texto-presentacion .link-contacto, .main-index .seccion-2 .seccion-contenido .inicio-presentacion div a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: 0.6s;
+  font-weight: 600;
+  padding: 8px 10px;
+  text-align: center;
+}
+
 /* HEADER */
 header {
   background-color: black;
@@ -124,16 +136,8 @@ header nav .cont-menu .menu .menu-ul li .active {
   padding-top: 22px;
 }
 .main-index .seccion-2 .seccion-contenido .inicio-presentacion div a {
-  font-weight: 600;
   position: absolute;
-  text-decoration: none;
-  padding: 8px 10px;
-  border-radius: 10px;
-  letter-spacing: 1px;
   bottom: 20px;
-  transition: 0.6s;
-  color: white;
-  background-color: black;
   z-index: 2;
 }
 .main-index .seccion-2 .seccion-contenido .inicio-presentacion div a:hover {
@@ -195,17 +199,8 @@ header nav .cont-menu .menu .menu-ul li .active {
   font-weight: 700;
 }
 .main-nosotros .sobre-nosotros .texto-presentacion .link-contacto {
-  font-weight: 600;
   font-size: 1.2rem;
-  text-decoration: none;
-  padding: 8px 10px;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  transition: 0.6s;
-  color: white;
-  background-color: black;
   width: 100%;
-  text-align: center;
 }
 .main-nosotros .sobre-nosotros .texto-presentacion .link-contacto:hover {
   background: #8fc8eb;
@@ -240,9 +235,10 @@ header nav .cont-menu .menu .menu-ul li .active {
   width: 100%;
 }
 .main-productos section .grilla-productos .card .card-body .boton-info {
-  background-color: black;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border-radius: 5px;
   border: none;
-  --bs-btn-active-bg: nth($list: $colores, $n: 3);
 }
 .main-productos section .grilla-productos .card .card-body .boton-info:hover {
   background-color: #8fc8eb;
@@ -275,6 +271,12 @@ header nav .cont-menu .menu .menu-ul li .active {
 }
 
 /* MAIN PACKAGING */
+.main-packaging h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 9px;
+}
 .main-packaging .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -320,9 +322,10 @@ header nav .cont-menu .menu .menu-ul li .active {
   font-weight: 400;
 }
 .main-packaging .container .contenedor-packaging .row .sizecard-font .card-solopackaging .boton-info {
-  background-color: black;
-  color: white;
-  --bs-btn-border-color: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
 }
 .main-packaging .container .contenedor-packaging .row .sizecard-font .card-solopackaging .boton-info:hover {
   background-color: #8fc8eb;
@@ -343,6 +346,8 @@ header nav .cont-menu .menu .menu-ul li .active {
 .main-contacto .contactanos .maps iframe {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  width: 43vw;
+  height: 84vh;
 }
 .main-contacto .contactanos .form-contacto {
   width: 40vw;
@@ -372,14 +377,23 @@ header nav .cont-menu .menu .menu-ul li .active {
   margin-left: 10px;
   margin-bottom: 0;
 }
+.main-contacto .contactanos .form-contacto .formulario {
+  margin-top: 20px;
+}
+.main-contacto .contactanos .form-contacto .formulario div h2 {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-left: 9px;
+  margin-top: 5px;
+}
 .main-contacto .contactanos .form-contacto .formulario form {
-  padding: 8px;
+  padding: 7px;
   margin-top: 1px;
 }
 .main-contacto .contactanos .form-contacto .formulario form div input {
   font-size: 1.2rem;
   font-weight: 300;
-  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 9px;
   width: 80%;
   border: none;
@@ -389,14 +403,14 @@ header nav .cont-menu .menu .menu-ul li .active {
 .main-contacto .contactanos .form-contacto .formulario form div textarea {
   font-size: 1.2rem;
   font-weight: 300;
-  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 9px;
   width: 80%;
   border: none;
   border: 1px solid #8fc8eb;
   border-radius: 10px;
 }
-.main-contacto .contactanos .form-contacto .formulario form .boton-enviar {
+.main-contacto .contactanos .form-contacto .formulario form div .boton-enviar {
   font-size: 1.2rem;
   font-weight: 300;
   padding: 9px;
@@ -404,9 +418,8 @@ header nav .cont-menu .menu .menu-ul li .active {
   border: none;
   border: 1px solid #8fc8eb;
   border-radius: 10px;
-  margin-top: 15px;
 }
-.main-contacto .contactanos .form-contacto .formulario form .boton-enviar:hover {
+.main-contacto .contactanos .form-contacto .formulario form div .boton-enviar:hover {
   background-color: #8fc8eb;
   color: black;
 }
@@ -486,9 +499,6 @@ footer .copyright span {
   .main-contacto .contactanos .form-contacto {
     width: 40vw;
   }
-  .main-contacto .contactanos .form-contacto .datos-contacto {
-    width: 100%;
-  }
   .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos img {
     height: 25px;
   }
@@ -542,6 +552,12 @@ footer .copyright span {
     --swiffy-slider-item-count: 1;
   }
   /* Main packaging */
+  .main-packaging h3 {
+    width: 61vw;
+    margin: auto;
+    margin-top: 18px;
+    font-size: 1.4rem;
+  }
   .main-packaging .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -629,6 +645,7 @@ footer .copyright span {
     width: 90vw;
   }
   .main-contacto .contactanos .form-contacto .datos-contacto {
+    width: 90vw;
     flex-direction: column;
     align-items: center;
     text-align: center;

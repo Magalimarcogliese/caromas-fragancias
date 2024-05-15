@@ -24,9 +24,11 @@
                         width: 100%;
                     }
                     .boton-info{
-                        background-color: nth($list: $colores, $n: 1);
+                        @extend %estilos-botones;
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                        border-radius: 5px;
                         border: none;
-                        --bs-btn-active-bg: nth($list: $colores, $n: 3);
                         &:hover{
                             background-color: nth($list: $colores, $n: 3);
                             border-color: nth($list: $colores, $n: 3);

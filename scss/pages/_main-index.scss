@@ -57,16 +57,9 @@
                 }
                 div{
                     a{
-                        font-weight: 600;
+                        @extend %estilos-botones;
                         position: absolute;
-                        text-decoration: none;
-                        padding: 8px 10px;
-                        border-radius: 10px;
-                        letter-spacing: 1px;
                         bottom: 20px;
-                        transition: .6s;  
-                        color: nth($list: $colores, $n: 2);
-                        background-color: nth($list: $colores, $n: 1);
                         z-index: 2;
                         &:hover{
                             background-color: nth($list: $colores, $n: 3);
