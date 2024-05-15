@@ -8,8 +8,7 @@
     }
     .container{
         @include grid(repeat(2,1fr),repeat(2,1fr));
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
         .contenedor-packaging{
             @include flex (column,center,center);
             border: none;
